@@ -1,0 +1,29 @@
+@font-face {
+    font-family:"Jura_700" ;
+    src: url(../fonts/Jura/static/Jura-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family:"Jura_300" ;
+    src: url(../fonts/Jura/static/Jura-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family:"Jura_500" ;
+    src: url(../fonts/Jura/static/Jura-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:"Jura_400" ;
+    src: url(../fonts/Jura/static/Jura-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:"Jura_600" ;
+    src: url(../fonts/Jura/static/Jura-SemiBold.ttf);
+    font-weight: 600;
+}

@@ -1,0 +1,1413 @@
+@charset "UTF-8";
+@import url(./fonts.css);
+* {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.border {
+  border: 1px solid #C7F803;
+  border-radius: 4px;
+  background-color: #1A191D;
+  color: #F4F4F4;
+  color: #F4F4F4;
+  font-family: "Jura_600";
+  font-size: 15px;
+  padding: 5px 34px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 40%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Jura_700";
+  font-size: 38px;
+}
+
+h2 {
+  font-family: "Jura_600";
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Jura_700";
+  font-size: 22px;
+}
+
+h4 {
+  font-family: "Jura_600";
+  font-size: 18px;
+}
+
+p {
+  font-family: "Jura_400";
+  font-size: 18px;
+  color: #F4F4F4;
+}
+
+body {
+  background: #151417;
+  color: #F4F4F4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background: #C7F803;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 34px;
+  display: inline-block;
+  font-family: "Jura_600";
+  font-size: 15px;
+  color: #151417;
+}
+
+.menu {
+  padding-bottom: 10px;
+  background: #151417;
+  position: fixed;
+  margin-top: 0px;
+  width: 100%;
+  transition: top 0.3s;
+}
+.menu .wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.menu .wrapper .header__burger-btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #22c630;
+  z-index: 2;
+  top: 5px;
+}
+.menu .wrapper .header__burger-btn span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #F4F4F4;
+  left: 5px;
+}
+.menu .wrapper .header__burger-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+.menu .wrapper .header__burger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+.menu .wrapper .logo {
+  font-family: "Jura_700";
+  font-size: 36px;
+}
+.menu .wrapper .logo a {
+  color: #F4F4F4;
+}
+.menu .wrapper .d3 {
+  cursor: pointer;
+  background: #1A191D;
+  margin: 0 26% 0 5%;
+}
+.menu .wrapper .d3 form input {
+  background: transparent;
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+  color: #74727b;
+  font-size: 15px;
+  font-family: "Jura_400";
+}
+.menu .wrapper .d3 form .input {
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+.menu .wrapper .d3 form .input::-moz-placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+}
+.menu .wrapper .d3 form .input::placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+}
+.menu .wrapper .menu_header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 544px;
+}
+.menu .wrapper .menu_header a {
+  color: #F4F4F4;
+  font-family: "Jura_400";
+  font-size: 16px;
+  margin: 0 10px 0 10px;
+}
+.menu .wrapper .menu_header a img {
+  margin-bottom: -3px;
+}
+
+.main_header {
+  padding-top: 100px;
+}
+.main_header .container {
+  display: flex;
+}
+.main_header .container .left h1 {
+  width: 557px;
+  margin-bottom: 24px;
+}
+.main_header .container .left p {
+  max-width: 454px;
+  margin: 40px 0 60px 0;
+}
+.main_header .container .right {
+  margin: -100px 0 0 80px;
+}
+
+.bg_cost_delivery {
+  background-color: #1A191D;
+  margin-top: 40px;
+  height: 270px;
+}
+.bg_cost_delivery .container .cost_delivery {
+  padding-top: 40px;
+  text-align: center;
+}
+.bg_cost_delivery .container .cost_delivery_form .d2 {
+  display: flex;
+  padding: 3% 10% 3% 8%;
+  background: #1A191D;
+}
+.bg_cost_delivery .container .cost_delivery_form .d2 .seldiv {
+  margin-top: -1px;
+}
+.bg_cost_delivery .container .cost_delivery_form .d2 .seldiv #selectvalue {
+  background: #1A191D;
+  width: 250px;
+  height: 37px;
+  padding-left: 15px;
+  color: #39383e;
+  font-size: 15px;
+  font-family: "Jura_400";
+  -webkit-appearance: none;
+  border-radius: 4px;
+  border: 2px solid #2E2D32;
+  outline: none;
+}
+.bg_cost_delivery .container .cost_delivery_form .d2 form {
+  padding: 0 3% 0 3%;
+}
+.bg_cost_delivery .container .cost_delivery_form .d2 form input {
+  background: transparent;
+  width: 250px;
+  height: 30px;
+  padding-left: 15px;
+  color: #74727b;
+  font-size: 15px;
+  font-family: "Jura_400";
+}
+.bg_cost_delivery .container .cost_delivery_form .d2 form .input {
+  border-radius: 4px;
+  border: 2px solid #2E2D32;
+  outline: none;
+}
+.bg_cost_delivery .container .cost_delivery_form .d2 form .input::-moz-placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+  cursor: pointer;
+}
+.bg_cost_delivery .container .cost_delivery_form .d2 form .input::placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+  cursor: pointer;
+}
+.bg_cost_delivery .container .button_form {
+  float: right;
+  margin-right: 150px;
+}
+
+.fly_delivery .container .fly {
+  display: flex;
+}
+.fly_delivery .container .fly .fly_left {
+  margin-top: 200px;
+}
+.fly_delivery .container .fly .fly_left h1 {
+  margin-bottom: 40px;
+}
+.fly_delivery .container .fly .fly_right {
+  margin: -56px 0 70px 0;
+}
+
+.facts {
+  margin-top: -50px;
+}
+.facts .container .facts_elements .fact_element {
+  display: flex;
+  justify-content: space-around;
+}
+.facts .container .facts_elements .fact_element .facts {
+  text-align: center;
+}
+.facts .container .facts_elements .fact_element .facts h4 {
+  color: #C7F803;
+  font-family: "Jura_700";
+  font-size: 62px;
+}
+.facts .container .facts_elements .fact_element .facts span {
+  color: #C7F803;
+  font-family: "Jura_400";
+  font-size: 22px;
+}
+.facts .container .facts_elements .fact_element .facts p {
+  margin-top: 15px;
+  font-family: "Jura_400";
+  font-size: 18px;
+  color: #F4F4F4;
+  max-width: 250px;
+}
+
+.cost_delivery {
+  margin-top: 100px;
+  background-color: #1A191D;
+}
+.cost_delivery .container .cost .cost_text {
+  text-align: center;
+}
+.cost_delivery .container .cost .cost_text h2 {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+.cost_delivery .container .cost .cost_text p {
+  margin-bottom: 40px;
+}
+.cost_delivery .container .cost .d1 {
+  background: #1A191D;
+}
+.cost_delivery .container .cost .d1 form {
+  padding: 1% 10% 1% 39%;
+}
+.cost_delivery .container .cost .d1 form input {
+  background: transparent;
+  width: 250px;
+  height: 30px;
+  padding-left: 15px;
+  color: #74727b;
+  font-size: 15px;
+  font-family: "Jura_400";
+}
+.cost_delivery .container .cost .d1 form .input {
+  border-radius: 4px;
+  border: 2px solid #2E2D32;
+  outline: none;
+}
+.cost_delivery .container .cost .d1 form .input::-moz-placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+  cursor: pointer;
+}
+.cost_delivery .container .cost .d1 form .input::placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+  cursor: pointer;
+}
+.cost_delivery .container .cost .button_border {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about {
+  margin: 0 0 200px 0;
+  padding-top: 100px;
+}
+.about .container .about_text h2 {
+  margin-bottom: 40px;
+}
+
+.service_p {
+  padding-top: 100px;
+}
+
+.sale {
+  margin-top: 100px;
+}
+
+footer .menu_f {
+  margin-top: 45px;
+}
+footer .menu_f .wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+footer .menu_f .wrapper .logo {
+  font-family: "Jura_700";
+  font-size: 36px;
+}
+footer .menu_f .wrapper .logo a {
+  color: #F4F4F4;
+}
+footer .menu_f .wrapper .d3 {
+  cursor: pointer;
+  background: #1A191D;
+  margin: 0 26% 0 5%;
+}
+footer .menu_f .wrapper .menu_footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 955px;
+  margin-left: 3%;
+}
+footer .menu_f .wrapper .menu_footer a {
+  color: #F4F4F4;
+  font-family: "Jura_400";
+  font-size: 14px;
+  margin: 0 20px 0 20px;
+}
+footer .container .row {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .row .footer_col ul {
+  padding: 0;
+}
+footer .container .row .footer_col ul li {
+  margin-top: 20px;
+}
+footer .container .row .footer_col ul li a {
+  color: #F0B3BC;
+  text-decoration-line: underline;
+  font-family: "Jura_300";
+  font-size: 14px;
+}
+footer .container .row .footer_col ul li p {
+  font-family: "Jura_300";
+  font-size: 14px;
+  max-width: 350px;
+}
+footer .container .under_footer {
+  margin: 40px 0 40px 0;
+}
+footer .container .under_footer p {
+  color: #F4F4F4;
+  font-family: "Jura_400";
+  opacity: 0.5;
+  font-size: 10px;
+  text-align: center;
+}
+
+.sale .container .sale_text .row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sale .container .sale_text .row .sale_col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+  border-bottom: 1px solid #C7F803;
+}
+.sale .container .sale_text .row .sale_col p {
+  padding-bottom: 4px;
+  max-width: 100%;
+}
+.sale .container .sale_text .row .sale_col span {
+  font-family: "Jura_400";
+  font-size: 18px;
+  max-width: 100%;
+}
+.sale .container .sale_text .row .sale_col_1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+.sale .container .pay {
+  margin: 50px 0 100px 0;
+}
+
+.pay {
+  margin-top: 50px;
+}
+.pay .container {
+  display: flex;
+}
+.pay .container .cost .cost_text h1 {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.pay .container .cost .cost_text p {
+  margin-bottom: 40px;
+}
+.pay .container .cost .d1 form {
+  padding: 1% 10% 1% 0;
+}
+.pay .container .cost .d1 form input {
+  background: transparent;
+  width: 450px;
+  height: 30px;
+  padding-left: 15px;
+  color: #74727b;
+  font-size: 15px;
+  font-family: "Jura_400";
+}
+.pay .container .cost .d1 form .input {
+  border-radius: 4px;
+  border: 2px solid #2E2D32;
+  outline: none;
+}
+.pay .container .cost .d1 form .input::-moz-placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+  cursor: pointer;
+}
+.pay .container .cost .d1 form .input::placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+  cursor: pointer;
+}
+.pay .container .cost .d1 .check {
+  margin-top: 35px;
+}
+.pay .container .cost .d1 .check .check_box {
+  margin-bottom: 10px;
+  /* стили при наведении курсора на checkbox */
+  /* стили для активного состояния чекбокса (при нажатии на него) */
+  /* стили для чекбокса, находящегося в фокусе */
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  /* стили для чекбокса, находящегося в состоянии disabled */
+}
+.pay .container .cost .d1 .check .check_box .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.pay .container .cost .d1 .check .check_box .custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.pay .container .cost .d1 .check .check_box .custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #2E2D32;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.pay .container .cost .d1 .check .check_box .custom-checkbox:checked + label::before {
+  border-color: #2E2D32;
+  background-color: #C7F803;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.pay .container .cost .d1 .check .check_box .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #C7F803;
+}
+.pay .container .cost .d1 .check .check_box .custom-checkbox:not(:disabled):active + label::before {
+  background-color: #b3ffb9;
+  border-color: #b3ffbd;
+}
+.pay .container .cost .d1 .check .check_box .custom-checkbox:focus + label::before {
+  box-shadow: 0 0 0 0.2rem rgba(168, 255, 139, 0.25);
+}
+.pay .container .cost .d1 .check .check_box .custom-checkbox:focus:not(:checked) + label::before {
+  border-color: #C7F803;
+}
+.pay .container .cost .d1 .check .check_box .custom-checkbox:disabled + label::before {
+  background-color: #d5eec0;
+}
+.pay .container .cost .d1 .check .check_box label {
+  color: #5D5B63;
+  font-family: "Jura_400";
+  font-size: 15px;
+}
+.pay .container .cost .button_border {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.pay .container .attention {
+  display: flex;
+  align-items: flex-end;
+  align-items: flex-start;
+  margin: 8.4% 0 0 10%;
+}
+.pay .container .attention .img {
+  margin: 10% 0 0 10%;
+}
+.pay .container .attention .attention_bg {
+  background-color: #1A191D;
+  border-radius: 4px;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.pay .container .attention .attention_bg .attention_bg_img {
+  max-width: 220px;
+  padding: 6%;
+  margin: 0 auto;
+}
+.pay .container .attention .attention_bg .attention_bg_img img {
+  padding: 2%;
+}
+.pay .container .attention .attention_bg p {
+  font-family: "Jura_400";
+  font-size: 14px;
+  max-width: 250px;
+  margin: 2%;
+  padding: 6%;
+}
+
+.pay {
+  margin-bottom: 40px;
+}
+.pay .container .about_text h2 {
+  margin-bottom: 40px;
+}
+.pay .container .about_text p {
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+.pay .container .about_text a {
+  font-family: "Jura_400";
+  color: #F0B3BC;
+  font-size: 14px;
+  border-bottom: 1px solid #F0B3BC;
+}
+
+.otsyv {
+  padding-top: 100px;
+}
+.otsyv .container .otsyv_h {
+  margin-bottom: 40px;
+}
+.otsyv .container .card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.otsyv .container .card_wrapper .card {
+  background-color: #1A191D;
+  width: 500px;
+  height: 150px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.otsyv .container .card_wrapper .card .card_header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.otsyv .container .card_wrapper .card .card_header .wrapper .card_name {
+  margin-left: -15%;
+}
+.otsyv .container .card_wrapper .card .card_header .wrapper .card_name p {
+  font-family: "Jura_700";
+  font-size: 20px;
+}
+.otsyv .container .card_wrapper .card .card_header .wrapper .card_name a {
+  color: #F4F4F4;
+  opacity: 0.5;
+  font-size: 15px;
+}
+.otsyv .container .card_wrapper .card .card_header .wrapper .card_date {
+  font-family: "Jura_400";
+}
+.otsyv .container .card_wrapper .card .card_main {
+  width: 445px;
+  font-family: "Jura_400";
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.h1 {
+  margin: 100px 0 40px 0;
+}
+
+.contacts {
+  margin-bottom: 80px;
+}
+.contacts .container .contact h2 {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #C7F803;
+}
+.contacts .container .contact p {
+  margin-top: 20px;
+  width: 900px;
+}
+
+.lk {
+  margin-top: 100px;
+}
+
+.progress_bar {
+  padding-top: 40px;
+  margin-top: 20px;
+  background-color: #1A191D;
+  height: 170px;
+}
+.progress_bar .container #myProgress {
+  margin-top: 40px;
+  width: 100%;
+  border: 1px solid #C7F803;
+}
+.progress_bar .container #myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #424048;
+}
+.progress_bar .container span .procent {
+  text-align: right;
+}
+
+.watch {
+  background-color: #1A191D;
+  margin-top: 100px;
+  width: 100%;
+  height: 120px;
+}
+.watch .container {
+  display: flex;
+  justify-content: space-between;
+}
+.watch .container .watch_left {
+  margin-top: 40px;
+}
+.watch .container .watch_right {
+  margin-top: 40px;
+}
+.watch .container .watch_right .d1 {
+  display: flex;
+}
+.watch .container .watch_right .d1 form {
+  margin-right: 20px;
+}
+.watch .container .watch_right .d1 form input {
+  background: transparent;
+  width: 250px;
+  height: 25px;
+  padding-left: 15px;
+  color: #F4F4F4;
+  font-size: 15px;
+  font-family: "Jura_400";
+}
+.watch .container .watch_right .d1 form .input {
+  border: 2px solid #5D5B63;
+  border-radius: 4px;
+  outline: none;
+}
+.watch .container .watch_right .d1 form .input:focus {
+  border-radius: 4px;
+  border: 2px solid #F4F4F4;
+  outline: none;
+}
+.watch .container .watch_right .d1 form .input::-moz-placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+  cursor: pointer;
+}
+.watch .container .watch_right .d1 form .input::placeholder {
+  color: #39383e;
+  font-family: "Jura_400";
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.documets {
+  margin-top: 100px;
+}
+.documets .container {
+  display: flex;
+  justify-content: space-between;
+}
+.documets .container .document_left h2 {
+  margin-bottom: 20px;
+}
+.documets .container .document_left span {
+  font-family: "Jura_400";
+  font-size: 16px;
+}
+.documets .container .document_left ul {
+  margin-top: 5px;
+}
+.documets .container .document_left ul li {
+  list-style: circle;
+  color: #F0B3BC;
+}
+.documets .container .document_left ul li span {
+  color: #F4F4F4;
+  font-family: "Jura_400";
+  font-size: 16px;
+}
+.documets .container .document_right {
+  margin: -40px 40px 0 0;
+}
+
+.track {
+  margin-top: 100px;
+}
+.track .container .detail .detail_card {
+  display: flex;
+}
+.track .container .detail .detail_card p {
+  font-family: "Jura_400";
+  font-size: 24px;
+  opacity: 0.5;
+  margin: 15px 0 0 40px;
+}
+
+.authoriz, .register {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+.up {
+  display: block;
+}
+
+.bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  background: #151417;
+  padding: 1%;
+  transform: translate(-50%, -50%);
+}
+
+.auth-container {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.authoriz-title {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Jura_700";
+  margin-bottom: 40px;
+}
+
+.bt-authoriz {
+  width: 350px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.number-authoriz {
+  width: 300px;
+  height: 40px;
+  border: 2px solid #2E2D32;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  color: #F4F4F4;
+  padding-left: 16px;
+  font-family: "Jura_400";
+  font-size: 14px;
+}
+
+.number-authoriz:invalid {
+  border-color: red;
+}
+
+.number-authoriz:focus {
+  border-radius: 4px;
+  border: 2px solid #F4F4F4;
+  outline: none;
+}
+
+.number-authoriz::-moz-placeholder {
+  color: #818185;
+  font-family: "Jura_400";
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.number-authoriz::placeholder {
+  color: #818185;
+  font-family: "Jura_400";
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.close-bt {
+  margin-left: 370px;
+  cursor: pointer;
+}
+
+.close-bt_2 {
+  margin-left: 370px;
+  cursor: pointer;
+}
+
+.to-register {
+  text-decoration: none;
+  margin: -10px -140px 40px 0;
+}
+
+.text-to-register {
+  font-size: 14px;
+  color: #F0B3BC;
+  font-family: "Jura_400";
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.to-login {
+  text-decoration: none;
+  margin: -10px -170px 40px 0;
+}
+
+.text-to-login {
+  font-size: 14px;
+  color: #F0B3BC;
+  font-family: "Jura_400";
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.user {
+  cursor: pointer;
+}
+
+.upreg {
+  display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    margin-top: 50px;
+  }
+  footer .container .menu .wrapper .menu_footer a, footer .container .menu_f .wrapper .menu_footer a {
+    font-size: 10px;
+    margin: 0 10px 0 10px;
+  }
+  footer .container .row {
+    margin-top: 30px;
+  }
+  footer .container .row .footer_col ul li {
+    margin-top: 10px;
+  }
+  footer .container .row .footer_col ul li a {
+    font-size: 14px;
+  }
+  footer .container .row .footer_col ul li p {
+    font-family: "Jura_300";
+    font-size: 12px;
+    max-width: 250px;
+  }
+  footer .container .under_footer {
+    margin: 40px 0 40px 0;
+  }
+  footer .container .under_footer p {
+    color: #F4F4F4;
+    font-family: "Jura_400";
+    opacity: 0.5;
+    font-size: 10px;
+    text-align: center;
+  }
+  h1 {
+    font-family: "Jura_700";
+    font-size: 30px;
+  }
+  h2 {
+    font-family: "Jura_600";
+    font-size: 22px;
+  }
+  h3 {
+    font-family: "Jura_700";
+    font-size: 14px;
+  }
+  h4 {
+    font-family: "Jura_600";
+    font-size: 12px;
+  }
+  p {
+    font-family: "Jura_400";
+    font-size: 12px;
+    color: #F4F4F4;
+  }
+  .container {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  .menu .wrapper .logo {
+    font-size: 22px;
+  }
+  .menu .wrapper .logo a {
+    color: #F4F4F4;
+  }
+  .menu .wrapper .logo a img {
+    width: 17px;
+    height: 17px;
+  }
+  .menu .wrapper .d3 {
+    margin: 0 6% 0 5%;
+  }
+  .menu .wrapper .d3 form input {
+    width: 80%;
+    height: 20px;
+    font-size: 13px;
+  }
+  .menu .wrapper .menu_header {
+    max-width: 400px;
+  }
+  .menu .wrapper .menu_header a {
+    font-size: 13px;
+    margin: 0 5px 0 5px;
+  }
+  .main_header {
+    margin-top: 50px;
+  }
+  .main_header .container .left h1 {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+  .main_header .container .left p {
+    max-width: 454px;
+    margin: 20px 0 40px 0;
+  }
+  .main_header .container .right {
+    margin-top: 20px;
+  }
+  .main_header .container .right img {
+    width: 250px;
+  }
+  .fly_delivery .container .fly .fly_left {
+    margin-top: 80px;
+  }
+  .fly_delivery .container .fly .fly_right {
+    margin: 56px 0 70px 0;
+  }
+  .fly_delivery .container .fly .fly_right img {
+    width: 250px;
+  }
+  .bg_cost_delivery {
+    height: 200px;
+  }
+  .bg_cost_delivery .container .cost_delivery {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 {
+    display: flex;
+    padding: 3% 10% 3% 8%;
+    background: #1A191D;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 .seldiv {
+    margin-top: -1px;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 .seldiv #selectvalue {
+    background: #1A191D;
+    width: 150px;
+    height: 37.5px;
+    padding-left: 15px;
+    color: #39383e;
+    font-size: 15px;
+    font-family: "Jura_400";
+    -webkit-appearance: none;
+    border-radius: 4px;
+    border: 2px solid #2E2D32;
+    outline: none;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 form {
+    padding: 0 3% 0 3%;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 form input {
+    background: transparent;
+    width: 150px;
+    height: 30px;
+    padding-left: 15px;
+    color: #74727b;
+    font-size: 15px;
+    font-family: "Jura_400";
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 form .input {
+    border-radius: 4px;
+    border: 2px solid #2E2D32;
+    outline: none;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 form .input::-moz-placeholder {
+    color: #39383e;
+    font-family: "Jura_400";
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 form .input::placeholder {
+    color: #39383e;
+    font-family: "Jura_400";
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .bg_cost_delivery .container .button_form {
+    float: right;
+    margin-right: 150px;
+  }
+  .cost_delivery {
+    margin-top: 100px;
+    background-color: #1A191D;
+  }
+  .cost_delivery .container .cost .d1 form {
+    padding: 1% 0 1% 30%;
+  }
+  .cost_delivery .container .button_border {
+    margin-left: -20px;
+  }
+  .facts {
+    margin-top: -50px;
+  }
+  .facts .container .facts_elements .fact_element .facts {
+    text-align: center;
+  }
+  .facts .container .facts_elements .fact_element .facts h4 {
+    font-size: 42px;
+  }
+  .facts .container .facts_elements .fact_element .facts span {
+    font-size: 16px;
+  }
+  .facts .container .facts_elements .fact_element .facts p {
+    font-size: 12px;
+  }
+  .pay {
+    margin-top: 50px;
+  }
+  .pay .container {
+    display: flex;
+  }
+  .pay .container .attention {
+    margin: 8.4% 0 0 10%;
+  }
+  .pay .container .attention .img {
+    display: none;
+  }
+  .pay .container .attention .attention_bg {
+    background-color: #1A191D;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    width: 200px;
+  }
+  .pay .container .attention .attention_bg .attention_bg_img {
+    max-width: 100px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .pay .container .attention .attention_bg .attention_bg_img img {
+    padding: 0;
+  }
+  .pay .container .attention .attention_bg p {
+    font-family: "Jura_400";
+    font-size: 14px;
+    max-width: 250px;
+    margin: 2%;
+    padding: 6%;
+  }
+  .contacts {
+    margin-bottom: 60px;
+  }
+  .contacts .container .contact p {
+    width: 700px;
+  }
+  .h1 {
+    margin: 50px 0 40px 0;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu.open .wrapper {
+    transform: translateX(40%);
+  }
+  h1 {
+    font-family: "Jura_700";
+    font-size: 26px;
+  }
+  h2 {
+    font-family: "Jura_600";
+    font-size: 18px;
+  }
+  h3 {
+    font-family: "Jura_700";
+    font-size: 14px;
+  }
+  h4 {
+    font-family: "Jura_600";
+    font-size: 12px;
+  }
+  p {
+    font-family: "Jura_400";
+    font-size: 16px;
+    color: #F4F4F4;
+  }
+  .container {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .container .menu {
+    padding-bottom: 10px;
+    background: #151417;
+    position: static;
+    margin-top: -10px;
+    width: 100%;
+    transition: top 5s;
+  }
+  .container .menu .wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .container .menu .wrapper .header__burger-btn {
+    display: block;
+  }
+  .container .menu .wrapper .logo {
+    position: fixed;
+    font-family: "Jura_700";
+    font-size: 26px;
+    margin-left: 20%;
+  }
+  .container .menu .wrapper .logo a {
+    color: #F4F4F4;
+  }
+  .container .menu .wrapper .logo img {
+    width: 20px;
+  }
+  .container .menu .wrapper .d3 {
+    display: none;
+  }
+  .container .menu .wrapper .menu_header {
+    position: absolute;
+    left: -190px;
+    top: 0;
+    width: 150px;
+    background-color: #1A191D;
+    display: grid;
+    padding: 50px 20px 20px 20px;
+  }
+  .container .menu .wrapper .menu_header a {
+    color: #F4F4F4;
+    font-family: "Jura_400";
+    font-size: 16px;
+    margin: 0 10px 0 10px;
+    display: block;
+    padding: 8px 0;
+  }
+  .container .menu .wrapper .menu_header a img {
+    margin: -3px;
+  }
+  .main_header {
+    margin-top: 100px;
+  }
+  .main_header .container .left h1 {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .main_header .container .left p {
+    max-width: 354px;
+    margin: 10px 0 30px 0;
+  }
+  .main_header .container .right {
+    display: none;
+  }
+  .fly_delivery .container .fly {
+    margin-bottom: 90px;
+  }
+  .fly_delivery .container .fly .fly_left {
+    margin-top: 50px;
+  }
+  .fly_delivery .container .fly .fly_left h1 {
+    margin-bottom: 5px;
+  }
+  .fly_delivery .container .fly .fly_right {
+    display: none;
+  }
+  .facts {
+    margin-top: -15px;
+  }
+  .facts .container .facts_elements .fact_element .facts {
+    text-align: center;
+  }
+  .facts .container .facts_elements .fact_element .facts h4 {
+    font-size: 22px;
+  }
+  .facts .container .facts_elements .fact_element .facts span {
+    font-size: 12px;
+  }
+  .facts .container .facts_elements .fact_element .facts p {
+    font-size: 12px;
+  }
+  .bg_cost_delivery {
+    margin: 10px 0 40px 0;
+    height: 260px;
+    max-width: 100%;
+  }
+  .bg_cost_delivery .container .cost_delivery {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .bg_cost_delivery .container .cost_delivery h2 {
+    margin-top: -20px;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 {
+    display: grid;
+    padding: 3% 10% 3% 8%;
+    background: #1A191D;
+    margin-left: 10%;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 .seldiv {
+    margin-top: -1px;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 .seldiv #selectvalue {
+    background: #1A191D;
+    width: 270px;
+    height: 37.5px;
+    padding-left: 15px;
+    color: #39383e;
+    font-size: 15px;
+    font-family: "Jura_400";
+    -webkit-appearance: none;
+    border-radius: 4px;
+    border: 2px solid #2E2D32;
+    outline: none;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 .seldiv form {
+    padding: 2% 3% 2% 3%;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 .seldiv form input {
+    background: transparent;
+    width: 250px;
+    height: 30px;
+    padding-left: 15px;
+    color: #9c9aa4;
+    font-size: 15px;
+    font-family: "Jura_400";
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 .seldiv .input {
+    border-radius: 4px;
+    border: 2px solid #2E2D32;
+    outline: none;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 .seldiv .input::-moz-placeholder {
+    color: #7a7982;
+    font-family: "Jura_400";
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .bg_cost_delivery .container .cost_delivery_form .d2 .seldiv .input::placeholder {
+    color: #7a7982;
+    font-family: "Jura_400";
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .bg_cost_delivery .container .button_form {
+    float: right;
+    margin-right: 150px;
+  }
+  .cost_delivery {
+    margin-top: 80px;
+    background-color: #1A191D;
+  }
+  .cost_delivery .container .cost .d1 form {
+    padding: 1% 0 1% 30%;
+    margin-left: -10%;
+  }
+  .cost_delivery .container .button_border {
+    margin-left: -20px;
+  }
+  footer .menu_f {
+    margin-top: 45px;
+  }
+  footer .menu_f .wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+  footer .menu_f .wrapper .logo {
+    font-family: "Jura_700";
+    font-size: 36px;
+  }
+  footer .menu_f .wrapper .logo a {
+    color: #F4F4F4;
+  }
+  footer .menu_f .wrapper .menu_footer {
+    display: none;
+  }
+  footer .menu_f .wrapper .menu_footer a {
+    color: #F4F4F4;
+    font-family: "Jura_400";
+    font-size: 14px;
+    margin: 0 20px 0 20px;
+  }
+  footer .container .row {
+    margin-top: 20px;
+    display: inline;
+  }
+  footer .container .row .footer_col h4 {
+    margin-top: 15px;
+  }
+  footer .container .row .footer_col ul {
+    padding: 0;
+  }
+  footer .container .row .footer_col ul li {
+    margin-top: 5px;
+  }
+  footer .container .row .footer_col ul li a {
+    color: #F0B3BC;
+    text-decoration-line: underline;
+    font-family: "Jura_300";
+    font-size: 14px;
+  }
+  footer .container .row .footer_col ul li p {
+    font-family: "Jura_300";
+    font-size: 14px;
+    max-width: 350px;
+  }
+  footer .container .under_footer {
+    margin: 40px 0 40px 0;
+  }
+  footer .container .under_footer p {
+    color: #F4F4F4;
+    font-family: "Jura_400";
+    opacity: 0.5;
+    font-size: 10px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
